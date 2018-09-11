@@ -3,6 +3,7 @@ package com.sistemas.demo.service.impl;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.sistemas.demo.model.Sale;
@@ -12,7 +13,9 @@ import com.sistemas.demo.service.SaleService;
 @Service
 public class SaleServiceImpl implements SaleService{
 
+	@Autowired
 	private SaleRepository saleRepo;
+	
 	@Override
 	public Sale createOrUpdate(Sale sale) {
 		// TODO Auto-generated method stub

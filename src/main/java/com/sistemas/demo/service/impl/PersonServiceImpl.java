@@ -3,6 +3,7 @@ package com.sistemas.demo.service.impl;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.sistemas.demo.model.Person;
@@ -12,6 +13,7 @@ import com.sistemas.demo.service.PersonService;
 @Service
 public class PersonServiceImpl implements PersonService{
 	
+	@Autowired
 	private PersonRepository personRepo;
 
 	@Override
